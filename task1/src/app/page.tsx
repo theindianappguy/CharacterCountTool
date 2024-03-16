@@ -33,7 +33,7 @@ export default function Home() {
     setParagraphCount((text.match(/\n/g) || []).length + 1);
   };
 
-  const handleTextareaChange = (e) => {
+  const handleTextareaChange = (e:any) => {
     const text = e.target.value;
     setParagraph(text);
     countSentencesAndWords(text);
